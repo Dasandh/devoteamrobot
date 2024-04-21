@@ -86,25 +86,29 @@ public class Robot {
             case 'N':
                 pos_y++;
                 if (pos_y > grid.getHeight()) {
-                    throw new OutOfBoundsException("Robot went out of bounds, exiting program.");
+                    throw new OutOfBoundsException(
+                            MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
                 break;
             case 'E':
                 pos_x++;
                 if (pos_x > grid.getWidth()) {
-                    throw new OutOfBoundsException("Robot went out of bounds, exiting program.");
+                    throw new OutOfBoundsException(
+                            MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
                 break;
             case 'S':
                 pos_y--;
                 if (pos_x < grid.getHeight()) {
-                    throw new OutOfBoundsException("Robot went out of bounds, exiting program.");
+                    throw new OutOfBoundsException(
+                            MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
                 break;
             case 'W':
                 pos_x--;
                 if (pos_x < grid.getWidth()) {
-                    throw new OutOfBoundsException("Robot went out of bounds, exiting program.");
+                    throw new OutOfBoundsException(
+                            MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
                 break;
         }
