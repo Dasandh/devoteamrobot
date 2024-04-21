@@ -9,13 +9,14 @@ To run the program as is, either:
     3. Run the following command: 'java -jar robotdemo-1.0.jar' clone the repository into a maven project
 
 Or:
+
     1. Clone the repo
     2. Open the repo using any IDE, ex. vscode
     3. Use the IDE to run/debug the project.
 
 
 ## Running the tests
-  1. Clone the repo
-  2. Open the repo using any IDE, ex. vscode
-  3. Use the IDE to run/debug the project.
+      1. Clone the repo
+      2. Open the repo using any IDE, ex. vscode
+      3. Use the IDE to run/debug the project.
   
