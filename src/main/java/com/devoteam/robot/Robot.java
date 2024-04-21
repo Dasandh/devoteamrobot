@@ -99,14 +99,14 @@ public class Robot {
                 break;
             case 'S':
                 pos_y--;
-                if (pos_x < grid.getHeight()) {
+                if (pos_y < 0) {
                     throw new OutOfBoundsException(
                             MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
                 break;
             case 'W':
                 pos_x--;
-                if (pos_x < grid.getWidth()) {
+                if (pos_x < 0) {
                     throw new OutOfBoundsException(
                             MessageFormat.format("ERROR: Out of bounds at {0} {1}", pos_x, pos_y));
                 }
